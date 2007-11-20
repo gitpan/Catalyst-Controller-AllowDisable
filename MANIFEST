@@ -1,0 +1,14 @@
+Changes
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+lib/Catalyst/Controller/AllowDisable.pm
+t/01-app.t
+t/00-load.t
+t/boilerplate.t
+t/pod-coverage.t
+t/pod.t
+t/lib/TestApp.pm
+t/lib/TestApp/Controller/Disable.pm
+t/lib/TestApp/Controller/Root.pm
