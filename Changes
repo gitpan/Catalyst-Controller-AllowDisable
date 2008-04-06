@@ -1,5 +1,9 @@
 Revision history for CatalystX-Controller-AllowDisable
 
+0.02    2008-04-05/11:43
+        - fix type
+        - using Module::Install
+
 0.01    2007-11-20/22:44
         First version, released on an unsuspecting world.
 

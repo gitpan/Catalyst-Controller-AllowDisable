@@ -3,7 +3,7 @@ package Catalyst::Controller::AllowDisable;
 use warnings;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use base qw/Catalyst::Controller/;
 use strict;
@@ -27,17 +27,16 @@ sub new {
 
 Catalyst::Controller::AllowDisable - Use when you want to disable your controller.
 
-=head1 SYNOPSYS
-
+=head1 SYNOPSIS
 
     Package App::Web::Controller::Devel;
-    
+
     use base qw/Catalyst::Controller::AllowDisable/;
-    
+
     sub make_10000_users : Local {
-    
+
     }
-    
+
     1;
 
 
@@ -48,7 +47,7 @@ myapp.yml
 
 =head1 DESCRIPTION
 
-I sometime create controllers for developer and which are good stff but I do not want to ship it to production but I do not want to remove it also. So I create this controller module. You can disable controller which using this module using on_controller_disable=1 at config. 
+I sometime create controller only for developers which I do not want to ship it to production but I do not want to remove it also. So I create this controller module. You can disable controller which using this module using on_controller_disable=1 at config.
 
 =head1 METHOD
 
@@ -56,11 +55,11 @@ I sometime create controllers for developer and which are good stff but I do not
 
 =head1 AUTHOR
 
-Tomohiro teranishi, C<< <tomohiro.teranishi at gmail.com> >>
+Tomohiro Teranishi, C<< <tomohiro.teranishi at gmail.com> >>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Tomohiro teranishi, all rights reserved.
+Copyright 2008 Tomohiro Teranishi, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

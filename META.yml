@@ -1,12 +1,14 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Catalyst-Controller-AllowDisable
-version:      0.01
-version_from: lib/Catalyst/Controller/AllowDisable.pm
-installdirs:  site
-requires:
-    Catalyst::Runtime:             5.7
-    Test::More:                    0
-
+abstract: Use when you want to disable your controller.
+author: Tomohiro Teranishi <tomohiro.teranishi@gmail.com>
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+generated_by: Module::Install version 0.64
+license: perl
+name: Catalyst-Controller-AllowDisable
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Catalyst::Runtime: 5.7
+  Test::More: 0
+version: 0.02

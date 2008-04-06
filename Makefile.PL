@@ -1,17 +1,13 @@
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME                => 'Catalyst::Controller::AllowDisable',
-    AUTHOR              => 'Tomohiro teranishi <tomohiro.teranishi@gmail.com>',
-    VERSION_FROM        => 'lib/Catalyst/Controller/AllowDisable.pm',
-    ABSTRACT_FROM       => 'lib/Catalyst/Controller/AllowDisable.pm',
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Test::More' => 0,
-        'Catalyst::Runtime' => 5.70,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'Catalyst-Controller-AllowDisable-*' },
-);
+name 'Catalyst-Controller-AllowDisable';
+author 'Tomohiro Teranishi <tomohiro.teranishi@gmail.com>';
+all_from 'lib/Catalyst/Controller/AllowDisable.pm';
+requires 'Test::More'        => 0;
+requires 'Catalyst::Runtime' => 5.70;
+license 'perl';
+auto_install;
+WriteAll;
+
