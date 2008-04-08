@@ -3,7 +3,7 @@ package Catalyst::Controller::AllowDisable;
 use warnings;
 use strict;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use base qw/Catalyst::Controller/;
 use strict;
@@ -11,15 +11,14 @@ use warnings;
 
 sub new {
     my $self = shift;
-    my $app = $_[0];
+    my $app  = $_[0];
     if ( !$app->config->{on_controller_disable} ) {
         my $new = $self->NEXT::new(@_);
-        $new->_application( $app );
+        $new->_application($app);
         return $new;
     }
     return $app;
 }
-
 
 1;
 

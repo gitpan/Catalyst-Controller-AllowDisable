@@ -1,5 +1,8 @@
 Revision history for CatalystX-Controller-AllowDisable
 
+0.03    2008-04-06/18:20
+        - add spelling.t
+
 0.02    2008-04-05/11:43
         - fix type
         - using Module::Install
