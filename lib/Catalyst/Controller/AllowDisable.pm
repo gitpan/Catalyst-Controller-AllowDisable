@@ -3,21 +3,22 @@ package Catalyst::Controller::AllowDisable;
 use warnings;
 use strict;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use base qw/Catalyst::Controller/;
 use strict;
 use warnings;
 
 sub new {
-    my $self = shift;
-    my $app  = $_[0];
-    if ( !$app->config->{on_controller_disable} ) {
-        my $new = $self->NEXT::new(@_);
-        $new->_application($app);
-        return $new;
+    my $class = shift;
+    my ($app) = @_;
+    my $self = $class->next::method(@_);
+
+    if ( $app->config->{on_controller_disable} ) {
+        return bless {}, 'Catalyst::Controller::AllowDisable::Disabled';
     }
-    return $app;
+
+    return $self;
 }
 
 1;

@@ -16,5 +16,4 @@ no_index:
 requires: 
   Catalyst::Runtime: 5.7
   Test::More: 0
-  Test::Spelling: 0
-version: 0.03
+version: 0.02

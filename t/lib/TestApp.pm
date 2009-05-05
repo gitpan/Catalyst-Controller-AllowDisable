@@ -27,7 +27,7 @@ our $VERSION = '0.01';
 # local deployment.
 
 __PACKAGE__->config( 
-    name => 'TestApp' ,
+    name => 'TestApp',
     on_controller_disable => 1,
 );
 

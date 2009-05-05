@@ -1,5 +1,8 @@
 Revision history for CatalystX-Controller-AllowDisable
 
+0.04    2009-05-05/17:06
+        - fixed #45531: Broken by Catalyst::Runtime 5.80
+
 0.03    2008-04-06/18:20
         - add spelling.t
 
