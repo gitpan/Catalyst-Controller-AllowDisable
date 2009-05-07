@@ -1,5 +1,8 @@
 Revision history for CatalystX-Controller-AllowDisable
 
+0.06    2009-05-07T13:59
+        - added repository URL
+
 0.05    2009-05-07/13:46
         - split tests to xt/
 
