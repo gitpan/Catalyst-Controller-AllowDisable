@@ -12,15 +12,11 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Catalyst/Controller/AllowDisable.pm
 Makefile.PL
-MANIFEST
-META.yml			# Will be created by "make dist"
+MANIFEST			This list of files
+META.yml
 README
 t/00-load.t
 t/01-app.t
-t/boilerplate.t
 t/lib/TestApp.pm
 t/lib/TestApp/Controller/Disable.pm
 t/lib/TestApp/Controller/Root.pm
-t/pod-coverage.t
-t/pod.t
-t/spelling.t
