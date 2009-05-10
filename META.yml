@@ -20,9 +20,9 @@ no_index:
     - xt
 requires:
   Catalyst::Runtime: 5.7
+  MRO::Compat: 0
   Test::More: 0
-  Test::Spelling: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://svn.coderepos.org/share/lang/perl/Catalyst-Controller-AllowDisable/trunk
-version: 0.06
+version: 0.07
