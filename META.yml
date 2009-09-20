@@ -1,5 +1,5 @@
 ---
-abstract: 'Use when you want to disable your controller.'
+abstract: DEPRECATED.
 author:
   - 'Tomohiro Teranishi <tomohiro.teranishi@gmail.com>'
 build_requires:
@@ -25,4 +25,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://svn.coderepos.org/share/lang/perl/Catalyst-Controller-AllowDisable/trunk
-version: 0.07
+version: 0.08

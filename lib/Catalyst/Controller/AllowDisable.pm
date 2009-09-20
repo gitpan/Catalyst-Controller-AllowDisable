@@ -3,7 +3,7 @@ package Catalyst::Controller::AllowDisable;
 use warnings;
 use strict;
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 use base qw/Catalyst::Controller/;
 use strict;
@@ -25,7 +25,14 @@ sub new {
 
 =head1 NAME
 
-Catalyst::Controller::AllowDisable - Use when you want to disable your controller.
+Catalyst::Controller::AllowDisable - DEPRECATED.
+
+=head1 WARNINGS
+
+this module is DEPRECATED.
+
+because equivalent mechanism is supported on Catalyst.
+http://lumberjaph.net/blog/index.php/2009/06/25/how-to-prevent-some-components-to-be-loaded-by-catalyst/
 
 =head1 SYNOPSIS
 
